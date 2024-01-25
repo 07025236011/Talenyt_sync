@@ -1,0 +1,359 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}body{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    font-family:"Inter", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    list-style: none;
+    text-decoration: none;
+}
+/* .fontz{
+    font-size: 24px;
+} */
+/* .navbar-nav{
+    color: ;
+} */
+
+li, a, button {
+    color:#667085;
+    text-decoration: none;
+}
+
+.clear{
+    float: left;
+}
+header{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    cursor: pointer;
+    width: 82%;
+    background-color:#F2F4F7 ;
+    padding-left: 32;
+    padding-right: 32;
+    padding-top: 16;
+    border-radius: 50px;
+    border: '1px #D0D5DD solid';
+    height: 100%;
+    box-shadow: 0em -0.2em 0em rgb(201, 199, 199) inset;
+}
+.logo{
+    cursor: pointer;
+}
+
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #586072;
+}
+
+.cta1 {
+    padding: 9px 25px;
+    color: #101828;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow:#98A2B3 inset;
+}
+.cta2 {
+    padding: 9px 25px;
+    color: white;
+    background-color: #175CD3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.container{
+    height: 600px;
+    padding: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+.container img{
+    width: 100%;
+    height: 500px;
+    box-shadow: 0em -0.2em 0em rgb(201, 199, 199) inset;
+}
+.container button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #175CD3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 8px;
+}
+.hero-text h1{
+    font-size: 3.4 rem;
+    margin-bottom: 12px;
+    color:#1D2939 ;
+
+}
+.hero-text{
+    width: 80%;
+}
+.hero-text p{
+   font-size: 1.4 rem;
+   margin-bottom: 12px;
+}
+@media(max-width:848px) {
+   .container{
+    margin-top: 10px;
+    flex-direction: column;
+   } 
+   .hero-text{
+    width: 100%;
+    text-align: center;
+   }
+   .hero-text h1{
+    font-size: 3rem;
+   }
+}
+@media(max-width:678px) {
+    .hero-text h1{
+     font-size: 2rem;
+    }
+ }
+
+ #sum{
+    width: 50%;
+    height: 30px;
+    margin-top: 12px;
+ }
+ .loner{
+    width: 100%;
+    text-align: center;
+    color: #475467;
+    font-size: 20;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 30;
+    word-wrap: break-word;
+ }
+
+ .list-n{
+    width: 100%;
+    height: 100%;
+    display:inline-flex;
+    justify-content: space-between;
+    gap: 69;
+    align-items: center;
+    padding: 10px;
+    margin-top: 1px;
+
+ }
+ .container-2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+    padding-top: 20px;
+
+ }
+ .box-1{
+    width:350px ;
+    background-color:aliceblue;
+    padding:20px;
+    margin:15px;
+    cursor:pointer;
+ }
+ .profile-img{
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+         margin-right: 10px;
+
+ }
+ .profile-img img{
+    width: 100%;
+    height: 100%;
+    
+ }
+ /* .box-icon{
+    display: flex;
+    align-items: center;
+ } */
+
+ .header-text{
+    display: flex;
+    flex-direction: column;
+ }
+ .header-text strong{
+    color: #1D2939;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+ }
+ .box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+ .about-company-text p{
+  font-size: 0.7rem;
+  color: #475467;
+ }
+ .image-frame{
+    width: 70px;
+    height: 70px;
+    
+ }
+
+ /* .footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimnax(200px, auto));
+    gap: 3.5rem;
+    background-color: whitesmoke;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+ .footer-content h4{
+    margin-bottom: 1.5rem;
+    font-size:20px;
+ }
+ .footer-content li{
+    margin-bottom: 16px;
+ }
+ .footer-content li a{
+    display: block;
+    color: #1D2939;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all .40s ease;
+ }
+ .footer-content p{
+    color:#1D2939;
+    font: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+ } */
+
+ .container-3 {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+  }
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordion button:hover,
+  .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  .accordion button:hover::after,
+  .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+  }
+  .accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
